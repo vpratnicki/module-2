@@ -115,22 +115,15 @@ h2 {
 .about-section {
     width: 100%;
     background-color: var(--secondary-color);
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 80px;
-    padding-left: 50px;
+    margin: 0 auto 0 auto;
     line-height: 1.5;
     display: flex;
-    flex-wrap: no-wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
 .about-text {
-
-    margin-bottom: 50px;
     font-weight: 400;
+    flex: 0 40%;
 }
 
 .about-text h2 {
@@ -143,9 +136,7 @@ h2 {
 }
 
 .about-img {
-
     border: 0;
-    display: block;
 }
 /* About section styles end */
 
@@ -196,10 +187,9 @@ h2 {
 .project-description p {
     font-size: 17px;
 }
-
-.project-1:hover a {
-    background-image: url('/assets/images/run-buddy-thumbnail2.jpg');
-    background-repeat: no-repeat;
-}
-
 /* Projects styles end */
+
+/* Contact styles start */
+
+
+/* Contact styles end */
