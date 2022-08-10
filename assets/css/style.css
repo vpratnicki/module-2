@@ -119,6 +119,7 @@ h2 {
     line-height: 1.5;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .about-text {
@@ -141,50 +142,87 @@ h2 {
 /* About section styles end */
 
 /* Project styles start */
+#projects {
+    display: flex;
+    justify-content: center;
+}
+.projects-title {
+  width: 10%;
+  border-right: 5px solid var(--tertiary-color);
+  margin: 25px 10px 0 0;
+}
 
 .projects-container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 80px;
-    padding-left: 50px;
-}
-.projects {
-    width: 100%;
-    margin: 0 auto;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-.project {
-    margin: 20px;
-    background: var(--tertiary-color);
-    color: var(--secondary-color);
-    flex: 1;
-  }
-
-.project img {
-    width: 100%;
-  }
-
-.project-description {
-    padding: 25px;
+    width: 70%;
+    margin: 25px;
     line-height: 1.3;
 }
 
-.project-description h3 {
+.project-1 {
+    background-image: url('../images/run-buddy.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 400px;
+    width: 90%;
+    margin-left: 25px;
+    color: var(--text-color);
+    position:relative
+  }
+
+  .project-1-text {
+    position:absolute;
+    bottom: 15px;
+    left: 0;
+    background-color: rgba(220,113,116, 0.8);
+    padding: 0 10px 0 10px;
+  }
+
+  .projects-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    line-height: 1.3;
+  }
+
+  .project-2 {
+    background-image: url('../images/horiseon.jpg');
+    background-size: cover;
+    background-position: left;
+    color: var(--text-color);
+  }
+
+  .project-2-text {
+    background-color: rgba(220,113,116, 0.8);
+    padding: 0 10px 0 10px;
+  }
+
+  .project-3 {
+    background-image: url('../images/lake.jpg');
+    color: var(--text-color);
+  }
+
+  .project-3-text {
+    background-color: rgba(220,113,116, 0.8);
+    padding: 0 10px 0 10px;
+  }
+
+.projects-container h3 {
     font-size: 25px;
     line-height: 48px;
     font-weight: 400;
 }
 
-.project-description h4 {
+.projects-container h4 {
     font-weight: lighter;
     font-size: 20px;
     margin-bottom: 15px;
 }
 
-.project-description p {
+.projects p {
     font-size: 17px;
 }
 /* Projects styles end */
