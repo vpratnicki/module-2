@@ -15,7 +15,7 @@ body {
     color: var(--text-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 1.5;
     font-weight: 300;
 }
 
@@ -89,19 +89,19 @@ header nav ul li a:hover {
 
 .hero-intro {
     border: 1px solid var(--tertiary-color);
-    background-color: rgba(234,246,246, 0.8);
+    background-color: rgba(243,240,245, 0.8);
     padding: 12px;
     font-size: 18px;
     text-align: right;
     line-height: 1.8;
     color: var(--text-color);
     margin: 11%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     border-radius: 15px;
 }
 /* Hero styles end */
 
-/* H2 styles start */
+/* H2 H3 styles start */
 h2 {
     display: flex;
     color: var(--primary-color);
@@ -111,12 +111,15 @@ h2 {
     font-weight: 400;
 }
 
+h3 {
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
 /* About section styles start */
 .about-section {
-    width: 100%;
     background-color: var(--secondary-color);
-    margin: 0 auto 0 auto;
-    line-height: 1.5;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -154,7 +157,6 @@ h2 {
 
 .projects-container {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     width: 70%;
@@ -166,53 +168,74 @@ h2 {
     background-image: url('../images/run-buddy.jpg');
     background-size: cover;
     background-position: top;
+    border: 5px solid var(--primary-color);
     height: 400px;
-    width: 90%;
+    width: 100%;
     margin-left: 25px;
     color: var(--text-color);
-    position:relative
-  }
+    position:relative;
+    flex: 3;
+}
 
-  .project-1-text {
+.project-1-text {
     position:absolute;
     bottom: 15px;
     left: 0;
-    background-color: rgba(220,113,116, 0.8);
+    background-color: rgba(74,123,129, 0.8);
     padding: 0 10px 0 10px;
-  }
+}
 
-  .projects-container2 {
+.projects-container2 {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin: 25px;
     line-height: 1.3;
-  }
+}
 
-  .project-2 {
+.project-2 {
     background-image: url('../images/horiseon.jpg');
     background-size: cover;
     background-position: left;
+    height: 200px;
+    width: 50%;
     color: var(--text-color);
-  }
+    flex: 1;
+    position: relative;
+}
 
-  .project-2-text {
-    background-color: rgba(220,113,116, 0.8);
+.project-2-text {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    background-color:  rgba(74,123,129, 0.8);
     padding: 0 10px 0 10px;
-  }
+}
 
-  .project-3 {
+.project-3 {
+    position: relative;
     background-image: url('../images/lake.jpg');
+    background-size: cover;
+    background-position: top;
     color: var(--text-color);
-  }
+    height: 200px;
+    width: 50%;
+    flex: 1;
+}
 
-  .project-3-text {
-    background-color: rgba(220,113,116, 0.8);
+.project-3-text {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    background-color: rgba(74,123,129, 0.8);
     padding: 0 10px 0 10px;
-  }
+}
 
 .projects-container h3 {
+    color: var(--secondary-color);
     font-size: 25px;
-    line-height: 48px;
+    line-height: 40px;
     font-weight: 400;
 }
 
@@ -229,5 +252,26 @@ h2 {
 
 /* Contact styles start */
 
+#contact {
+    display: flex;
+    background-color: var(--tertiary-color);
+    padding: 50px 25px 30px 25px;
+}
 
+.lets-connect {
+    border: 1px solid var(--tertiary-color);
+    background-color: var(--secondary-color);
+    padding: 0px 20px 10px 20px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.8;
+    color: var(--text-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+}
 /* Contact styles end */
+
+/* Footer styles start */
+
+
+/* Footer styles end */
