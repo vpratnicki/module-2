@@ -29,6 +29,7 @@ header {
     top: 0;
     z-index: 9999;
 }
+
 header h1 {
     font-weight: 400;
     font-size: 36px;
@@ -47,7 +48,7 @@ header nav {
 }
 
 header nav ul {
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -55,7 +56,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px; 
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -67,6 +68,7 @@ header nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
 }
+
 /* Header / Nab Bar styles end */
 
 /* Hero styles start*/
@@ -89,16 +91,17 @@ header nav ul li a:hover {
 
 .hero-intro {
     border: 1px solid var(--tertiary-color);
-    background-color: rgba(243,240,245, 0.8);
+    background-color: rgba(243, 240, 245, 0.8);
     padding: 12px;
     font-size: 18px;
-    text-align: right;
+    text-align: center;
     line-height: 1.8;
     color: var(--text-color);
     margin: 11%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
+    border-radius: 15px 40px;
 }
+
 /* Hero styles end */
 
 /* H2 H3 styles start */
@@ -142,6 +145,7 @@ h3 {
 .about-img {
     border: 0;
 }
+
 /* About section styles end */
 
 /* Project styles start */
@@ -149,12 +153,13 @@ h3 {
     display: flex;
     justify-content: center;
 }
-.projects-title {
-  width: 10%;
-  border-right: 5px solid var(--tertiary-color);
-  margin: 25px 10px 0 0;
-}
 
+.projects-title {
+    width: 10%;
+    border-right: 5px solid var(--tertiary-color);
+    margin: 25px 10px 25px 0;
+}
+/* main project container/styling */
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -162,8 +167,23 @@ h3 {
     width: 70%;
     margin: 25px;
     line-height: 1.3;
+    flex-direction: column;
+}
+.projects-container h3 {
+    color: var(--secondary-color);
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 400;
 }
 
+.projects-container h4 {
+    color: var(--secondary-color);
+    font-weight: lighter;
+    font-size:17px;
+    margin-bottom: 15px;
+}
+
+/* Project 1 styling */
 .project-1 {
     background-image: url('../images/run-buddy.jpg');
     background-size: cover;
@@ -173,87 +193,100 @@ h3 {
     width: 100%;
     margin-left: 25px;
     color: var(--text-color);
-    position:relative;
-    flex: 3;
+    position: relative;
 }
 
 .project-1-text {
-    position:absolute;
+    position: absolute;
     bottom: 15px;
     left: 0;
-    background-color: rgba(74,123,129, 0.8);
+    background-color: rgba(74, 123, 129, 0.8);
     padding: 0 10px 0 10px;
 }
 
-.projects-container2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 25px;
-    line-height: 1.3;
+.project-1 a {
+    display: block;
+    width: 100%;
+    height: 400px;
+    text-decoration: none;
 }
 
+.project-1:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Other projects container */
+.otherProjects {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 25px 25px;
+}
+
+/* Project2 styling */
 .project-2 {
     background-image: url('../images/horiseon.jpg');
     background-size: cover;
     background-position: left;
+    border: 5px solid var(--primary-color);
     height: 200px;
-    width: 50%;
+    width: 48%;
     color: var(--text-color);
-    flex: 1;
     position: relative;
+}
+
+.project-2 a {
+    display: block;
+    width: 100%;
+    height: 200px;
+    text-decoration: none;
 }
 
 .project-2-text {
     position: absolute;
     bottom: 15px;
     left: 0;
-    background-color:  rgba(74,123,129, 0.8);
+    background-color: rgba(74, 123, 129, 0.8);
     padding: 0 10px 0 10px;
 }
 
+.project-2-text a {
+    text-decoration: none;
+}
+
+.project-2:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Project 3 styling */
 .project-3 {
     position: relative;
     background-image: url('../images/lake.jpg');
     background-size: cover;
     background-position: top;
+    border: 5px solid var(--primary-color);
     color: var(--text-color);
     height: 200px;
     width: 50%;
-    flex: 1;
 }
 
 .project-3-text {
     position: absolute;
     bottom: 15px;
     left: 0;
-    background-color: rgba(74,123,129, 0.8);
+    background-color: rgba(74, 123, 129, 0.8);
     padding: 0 10px 0 10px;
 }
 
-.projects-container h3 {
-    color: var(--secondary-color);
-    font-size: 25px;
-    line-height: 40px;
-    font-weight: 400;
-}
-
-.projects-container h4 {
-    font-weight: lighter;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.projects p {
-    font-size: 17px;
+.project-3:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* Projects styles end */
 
-/* Contact styles start */
 
+/* Contact styles start */
 #contact {
     display: flex;
+    justify-content: center;
     background-color: var(--tertiary-color);
     padding: 50px 25px 30px 25px;
 }
@@ -262,16 +295,33 @@ h3 {
     border: 1px solid var(--tertiary-color);
     background-color: var(--secondary-color);
     padding: 0px 20px 10px 20px;
-    font-size: 18px;
-    text-align: left;
     line-height: 1.8;
-    color: var(--text-color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(49,31,50, 0.5);
+    border-radius: 10px;
+    max-width: 1000px;
 }
+.lets-connect-img {
+    padding-right: 25px;
+    float: left;
+    border-radius: 50%;
+}
+
+.lets-connect-text {
+    text-align: top;
+}
+
 /* Contact styles end */
 
 /* Footer styles start */
+.social-icons {
+    display: flex;
+    background-color: var(--text-color);
+    padding-left: 10px;
+}
 
+.social-icons img {
+    justify-items: flex-end;
+    padding: 10px 3px 10px 3px;
+}
 
 /* Footer styles end */
