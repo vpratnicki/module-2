@@ -23,7 +23,6 @@ body {
 header {
     padding: 10px 35px;
     color: var(--primary-color);
-    background-color: rgba(243, 240, 245, 0.8);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -108,7 +107,6 @@ header nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     border-radius: 15px 40px;
 }
-
 /* Hero styles end */
 
 /* H2 H3 H4 styles start */
@@ -130,12 +128,10 @@ h3 {
 h4 {
     font-size: 22px;
     font-weight: lighter;
-
 }
+/* H2 H3 H4 styles end */
 
 /* About section styles start */
-
-
 .about-section {
     background-color: var(--secondary-color);
     display:flex;
@@ -144,7 +140,6 @@ h4 {
 }
 
 .about-text {
-    width: 60%;
     flex: 0 50%;
 }
 
@@ -167,7 +162,6 @@ h4 {
 .about-img {
     border: 0;
 }
-
 /* About section styles end */
 
 /* Project styles start */
@@ -181,7 +175,9 @@ h4 {
     border-right: 5px solid var(--tertiary-color);
     margin: 25px 10px 25px 0;
 }
-/* main project container/styling */
+/* Project styles end */
+
+/* main project container/styles start */
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -202,11 +198,10 @@ h4 {
     color: var(--secondary-color);
     margin-bottom: 15px;
     font-size: 17px;
-
-
 }
+/* main project container/styles end */
 
-/* Project 1 styling */
+/* Project 1 styles start */
 .project-1 {
     background-image: url('../images/run-buddy.jpg');
     background-size: cover;
@@ -237,15 +232,17 @@ h4 {
 .project-1:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+/* Project 1 styles end */
 
-/* Other projects container */
+/* Other projects container start */
 .otherProjects {
     display: flex;
     justify-content: space-between;
     margin: 25px 0 25px 25px;
 }
+/* Other projects container end */
 
-/* Project2 styling */
+/* Project 2 styles start */
 .project-2 {
     background-image: url('../images/horiseon.jpg');
     background-size: cover;
@@ -279,8 +276,9 @@ h4 {
 .project-2:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+/* Project 2 styles end */
 
-/* Project 3 styling */
+/* Project 3 styles start */
 .project-3 {
     position: relative;
     background-image: url('../images/lake.jpg');
@@ -303,7 +301,7 @@ h4 {
 .project-3:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-/* Projects styles end */
+/* Project 3 styles end */
 
 
 /* Contact styles start */
@@ -332,7 +330,6 @@ h4 {
 .lets-connect-text {
     text-align: top;
 }
-
 /* Contact styles end */
 
 /* Footer styles start */
@@ -346,5 +343,61 @@ h4 {
     justify-items: flex-end;
     padding: 10px 3px 10px 3px;
 }
-
 /* Footer styles end */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+      background-position: 80%;
+      background-attachment: fixed;
+    }
+    header h1 {
+     width: 100%;
+     color: var(--secondary-color);
+     font-weight: 400;
+     font-size: 42px;
+     text-align: center;
+    }
+    header nav ul {
+     margin-top: 20px;
+     width: 100%;
+     justify-content: center;
+    }
+    header nav ul li a {
+     font-size: 20px;
+    }
+
+    .hero-intro {
+        padding: 12px;
+        text-align: center;
+        margin: 50px auto 50px auto;
+    }
+    .about-text {
+        flex: 0 60%;
+    }
+    .about-section {
+      padding-left: 20px;
+    }
+
+    .about-img img {
+        width: 300px;
+    }
+    .projects-title {
+        width: 18%;
+        border-right: 5px solid var(--tertiary-color);
+        margin: 25px 10px 25px 0;
+    }
+}
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    header {
+        background-position: none;
+    }
+    .hero {
+        background-position: top;
+
+    }
+}
