@@ -216,7 +216,12 @@ h4 {
     color: var(--text-color);
     position: relative;
 }
-
+.large-project-image {
+    background-image: url('../images/TheCatShack.png');
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 25px;
+}
 .project-1-text {
     position: absolute;
     bottom: 15px;
